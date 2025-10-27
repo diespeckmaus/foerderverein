@@ -11,6 +11,35 @@
   --radius: 1rem;
 }
 
+/* Hero-Buttons in #839227 (nur im #hero Section) */
+#hero .btn-success {
+  background-color: #839227;
+  border-color: #839227;
+}
+#hero .btn-success:hover,
+#hero .btn-success:focus {
+  background-color: #6f7c21; /* etwas dunkler für Hover/Focus */
+  border-color: #6f7c21;
+}
+#hero .btn-success:focus {
+  box-shadow: 0 0 0 .2rem rgba(131, 146, 39, 0.4);
+}
+
+#hero .btn-outline-success {
+  color: #839227;
+  border-color: #839227;
+  background-color: transparent;
+}
+#hero .btn-outline-success:hover,
+#hero .btn-outline-success:focus {
+  color: #ffffff;
+  background-color: #839227;
+  border-color: #839227;
+}
+#hero .btn-outline-success:focus {
+  box-shadow: 0 0 0 .2rem rgba(131, 146, 39, 0.35);
+}
+
 /* Global reset-ish */
 html { scroll-behavior: smooth; }
 body {
@@ -59,7 +88,7 @@ body {
 .section-pad { padding: 3rem 0; }
 .section-title {
   font-weight: 800; margin-bottom: 1rem;
-  color: var(--brand);
+  color: #839227;
 }
 .bg-contrast { background: var(--bg-contrast); }
 
