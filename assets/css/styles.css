@@ -1,10 +1,10 @@
-
 /* Root color system (tweak freely) */
 :root {
   --bg: #ffffff; /* You may switch to rgb(218,187,140) or a light gray */
   --bg-contrast: #f7f5f2; /* soft neutral section background */
   --brand: #2f6f3e; /* forest green accent */
   --brand-alt: #6b4f3a; /* warm brown accent */
+  --brand-badge: #a84045; /* dark red accent for badges */
   --text: #2b2b2b;
   --muted: #6c757d;
   --shadow: 0 0.5rem 1rem rgba(0,0,0,.08);
@@ -18,7 +18,7 @@
 }
 #hero .btn-success:hover,
 #hero .btn-success:focus {
-  background-color: #6f7c21; /* etwas dunkler für Hover/Focus */
+  background-color: #6f7c21; 
   border-color: #6f7c21;
 }
 #hero .btn-success:focus {
@@ -90,7 +90,15 @@ body {
   font-weight: 800; margin-bottom: 1rem;
   color: #839227;
 }
-.bg-contrast { background: var(--bg-contrast); }
+.bg-contrast {
+  background: var(--bg-contrast);
+}
+
+/* Badges */
+.badge-success {
+  background-color: var(--brand-badge) !important;
+  color: #ffffff;
+}
 
 /* Check list */
 .checklist { padding-left: 1.1rem; }
@@ -158,7 +166,7 @@ body {
   .gallery-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
-/* Spenden: neutralize Bootstrap's <code> styling and keep IBAN/BIC readable */
+/* Spenden: */
 #spenden code {
   color: var(--text);
   background: transparent;
@@ -170,3 +178,9 @@ body {
 }
 #spenden dt { color: var(--muted); font-weight: 600; }
 #spenden dd { margin-bottom: .5rem; }
+
+/* Spenden: Girocode */
+#spenden img {
+  max-width: 220px;
+  height: auto;
+}
